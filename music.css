@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nunito:ital,wght@0,300;1,300&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(to right, #b1b1b1, #4b4b4b);
+    overflow-y: hidden;
+}
+
+.container {
+    position: relative;
+    top: 30px;
+    max-width: 300px;
+    width: 100%;
+    height: 170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-song {
+    color: rgb(229, 229, 229);
+    background-color: rgb(75, 75, 75);
+    font-size: large;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 5px #666666;
+}
+
+/* Thiết kế bảng điều khiển */
+.dashboard {
+    background-color: #cacaca;
+    max-width: 250px;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 5px #656565;
+}
+
+.current-song {
+    font-size: smaller;
+    width: 25.5px;
+    margin-bottom: 2px;
+}
+
+ion-icon{
+    margin-top: 4px;
+    font-size: x-large;
+    cursor: pointer;
+    transition: 0.1s
+}
+
+ion-icon:hover {
+    font-size: xx-large;
+    transition: 0.1s
+}
+
+.thumb img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: 0.1s
+}
+
+.thumb img:hover {
+    width: 90px;
+    height: 90px;
+    transition: 0.1s;
+}
+
+.loop.looping {
+    color: #ff00f7;
+}
+
+.progress {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+}
+
+/* Thiết kế list nhạc */
+.list {
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    height: 290px;
+    top: 70px;
+    border-radius: 8px;
+    /* Giới hạn số bài hát hiển thị, còn lại sẽ được scroll */
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* Ẩn thanh scrollbar */    
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+/* Ẩn thanh scrollbar */
+.list::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+}
+
+.song {
+    margin-bottom: 10px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    height: 50px;
+    width: 245px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.song:hover {
+    background-color: #c9c9c9;
+}
+
+.song.active {
+    background-color: rgb(61, 61, 61);
+}
+
+.song.active .song-name {
+    color: rgb(216, 214, 214);
+}
+.song.active .singer {
+    color: rgb(165, 164, 164);
+}
+
+.thumb-list {
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.song-body {
+    padding-left: 10px;
+}
+
+.song-name {
+    font-size: smaller;
+}
+
+.singer {
+    font-style: italic;
+    font-size: x-small;
+    color: #717171;
+}
